@@ -671,7 +671,7 @@ var g = ((((255 - ScalaJS.m.Lexample_ScalaJSExample().p$1.x$1) | 0) * height) | 
     <li>
       The <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">CanvasRenderingContext2D</a> has a bunch of methods on it that can be used to draw things. Here we only draw 1x1 rectangles to put points on the canvas; try modifying the code to make it draw something else.</li>
     <li>
-      We've look at the <code>master</code> branch of <code>workbench-example-app</code>, but this project also has several other branches showing off different facets of Scala.js: <a href="https://github.com/lihaoyi/workbench-example-app/tree/dodge-the-dots">dodge-the-dots</a> and <a href="https://github.com/lihaoyi/workbench-example-app/tree/space-invaders">space-invaders</a> are both interesting branches worth playing with as a beginner. Check them out!</li>
+      We've looked at the <code>master</code> branch of <code>workbench-example-app</code>, but this project also has several other branches showing off different facets of Scala.js: <a href="https://github.com/lihaoyi/workbench-example-app/tree/dodge-the-dots">dodge-the-dots</a> and <a href="https://github.com/lihaoyi/workbench-example-app/tree/space-invaders">space-invaders</a> are both interesting branches worth playing with as a beginner. Check them out!</li>
     <li>
       Try publishing the output code somewhere. You only need <code>example-opt.js</code> and <code>index-opt.html</code>; try putting them somewhere online where the world can see it.
 </li></ul>
@@ -2643,7 +2643,7 @@ import scalatags.JsDom.all._</code><a class="scalatex-header-link" style="positi
       Scalatags requires that anything you want to embed in a Scalatags fragment be implicitly convertible to <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Frag</code>; here we are providing one for any Scala.Rx <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Rx[T]</code>s, as long as the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">T</code> provided is itself convertible to a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Frag</code>. We call <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">r().render</code> to extract the &quot;current&quot; value of the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Rx</code>, and then set up an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Obs</code> that watches the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Rx</code>, replacing the previous value with the current one every time its value changes.
 </p>
     <p>
-      Now that the set-up is out of the way, let's consider a simple HTML widhet that lets you enter text in a <code class="html scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">&lt;textarea&gt;</code>, and keeps track of the number of words, characters, and counts how long each word is.
+      Now that the set-up is out of the way, let's consider a simple HTML widget that lets you enter text in a <code class="html scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">&lt;textarea&gt;</code>, and keeps track of the number of words, characters, and counts how long each word is.
 </p>
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-13-24">
@@ -3046,7 +3046,7 @@ async{
           <canvas id="example21" style="display: block;overflow: scroll;"></canvas><script>Async().main(document.getElementById('example21'))</script>
 </div></div>
       <p>
-        We have an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">async</code> block, which contains a while loop. Each round around the loop, we wait for the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mousedown</code> channel to start the path, waiting for either <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mousedown</code> or <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mousedown</code> (which continues the path or ends it respectively), fill the shape, and then wait for another <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mousedown</code> before clearing the canvas and going again.
+        We have an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">async</code> block, which contains a while loop. Each round around the loop, we wait for the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mousedown</code> channel to start the path, waiting for either <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mousemove</code> or <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mouseup</code> (which continues the path or ends it respectively), fill the shape, and then wait for another <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">mousedown</code> before clearing the canvas and going again.
 </p>
       <p>
         Hopefully you'd agree that this code is much simpler to read and understand than the previous version. In particular, the control-flow of the code goes from top to bottom in a &quot;natural&quot; fashion, rather than jumping around ad-hoc like in the previous callback-based design.</p>
@@ -3085,7 +3085,7 @@ async{
   <div class="header scalatex-header scalatex-hover-container" id="DeviationsfromScala-JVM"><h1 id="DeviationsfromScala-JVM">Deviations from Scala-JVM<a class="scalatex-header-link" href="#DeviationsfromScala-JVM" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a></h1><br /></div>
     
 <p>
-  Although Scala.js tries very hard to maintain compatibility with Scala-JVM, there are some parts where the two platforms differs. This can be roughly grouped into two things: differences in the libraries available,and differences in the language itself. This chapter will cover both of these facets.
+  Although Scala.js tries very hard to maintain compatibility with Scala-JVM, there are some parts where the two platforms differs. This can be roughly grouped into two things: differences in the libraries available, and differences in the language itself. This chapter will cover both of these facets.
 </p>
 <h1 id="LanguageDifferences" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#LanguageDifferences" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Language Differences</h1>
   <h2 id="FloatsareDoubles" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#FloatsareDoubles" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Floats are Doubles</h2>
