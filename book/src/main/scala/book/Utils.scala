@@ -49,11 +49,12 @@ object lnk{
     }
   }
   object misc{
-    val IntelliJ = lnk("IntelliJ", "http://blog.jetbrains.com/scala/")
-    val Eclipse = lnk("Eclipse", "http://scala-ide.org/")
-    val Rhino = lnk("Rhino", "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino")
-    val Nodejs = lnk("Node.js", "http://nodejs.org/")
-    val PhantomJS = lnk("PhantomJS", "http://phantomjs.org/")
+    val IntelliJ = lnk("IntelliJ", "https://blog.jetbrains.com/scala/")
+    val VSCode = lnk("VS Code", "https://scalameta.org/metals/docs/editors/vscode.html")
+    val Nodejs = lnk("Node.js", "https://nodejs.org/")
+    val jsdom = lnk("jsdom", "https://github.com/jsdom/jsdom")
+    val Selenium = lnk("Selenium", "https://www.selenium.dev/documentation/en/webdriver/")
+    val PhantomJS = lnk("PhantomJS", "https://phantomjs.org/")
     val Play = lnk("Play", "https://www.playframework.com/")
     val Scalatra = lnk("Scalatra", "http://www.scalatra.org/")
     val ScalaTest = lnk("ScalaTest", "http://www.scalatest.org/")
